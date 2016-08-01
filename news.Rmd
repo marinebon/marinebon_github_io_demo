@@ -1,0 +1,14 @@
+---
+title: "News"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+params:
+  news_limit: 100
+output: html_fragment
+---
+
+```{r, child="_news.Rmd"}
+```
+
+
+
+

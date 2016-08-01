@@ -1,0 +1,12 @@
+---
+title: "MBON Portal Review Meetings"
+summary: "IOOS RAs data management committee saw a demo of the MBON portal. MBON teams are scheduling meetings with ecologists, fisheries experts and frequent users of the datasets to discuss the indices, analytical functionality and obtain feedback."
+date: "2016-06-03"
+output: html_document
+---
+
+
+
+
+OUTREACH IN MONTEREY AND FLORIDA. MBON partners in the NOAA Monterey Bay National Marine Sanctuary and Gulf of Mexico Coastal Ocean Observing Systems  (GCOOS) engage youth, public and educators. 
+NEW SEASCAPES GUIDES FLORIDA KEYS SAMPLING. MBON researchers tested a new sampling plan strategy based on satellite seascape maps.

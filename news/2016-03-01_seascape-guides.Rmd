@@ -1,0 +1,7 @@
+---
+title: "New Seascape Guides in Florida Keys"
+summary: "MBON researchers tested a new sampling plan strategy based on satellite seascape maps."
+date: "2016-03-01"
+output: html_document
+---
+

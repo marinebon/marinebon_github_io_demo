@@ -1,0 +1,55 @@
+name: "Marine Biodiversity Observation Network"
+navbar:
+  title: "MBON"
+  left:
+    - text: "Home"
+      icon: fa-home
+      href: index.html
+#    - text: "More"
+#      icon: fa-cog
+#      href: more.html
+    - text: "Sites"
+      icon: fa-globe
+      href: more.html
+      menu:
+        - text: "Florida Keys"
+          href: fl.html
+        - text: "Monterey Bay"
+          href: mb.html
+        - text: "Santa Barbara Channel"
+          href: sb.html
+        - text: "Chukchi Sea"
+          href: al.html
+    - text: "Research"
+      icon: fa-lightbulb-o
+      href: more.html
+      menu:
+        - text: "Seascapes"
+          href: seascapes.html
+        - text: "Genomics"
+          href: genomics.html
+        - text: "Robots"
+          href: robots.html
+        - text: "Informatics"
+          href: informatics.html
+  right:
+    - icon: fa-newspaper-o
+#      text: "News"
+      href: news.html
+    - icon: fa-info
+#      text: "About"
+      href: about.html
+    - icon: fa-question fa-lg
+      href: help.html
+    - icon: fa-phone fa-lg 
+      href: contact.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    toc: true
+    toc_float: true
+#    include:
+#      after_body: footer.html
+#    css: styles.css
+output_dir: "."

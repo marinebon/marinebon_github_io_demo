@@ -1,0 +1,31 @@
+---
+title: "Welcome"
+params:
+  news_limit: 3
+---
+
+```{r carousel, child="_carousel.Rmd"}
+```
+
+## Latest News
+
+```{r news, child="_news.Rmd"}
+```
+
+## Sites
+
+```{r map, echo=FALSE, message=FALSE}
+library(readr)
+library(dplyr)
+library(leaflet)
+
+# read sites, construct popup HTML
+sites = read_csv('data/sites.csv') %>%
+  mutate(
+    popup_html = sprintf("<h2>%s</h2>\n <a href=%s>More</a>", site,  url))
+
+leaflet(data = sites) %>%
+  addProviderTiles('Esri.OceanBasemap') %>%
+  addMarkers(~lon, ~lat, popup = ~as.character(popup_html))
+```
+
