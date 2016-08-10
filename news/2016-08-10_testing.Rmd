@@ -1,0 +1,9 @@
+---
+title: "Demo of using Rmarkdown"
+summary: "a quick way to add news item"
+date: "2016-04-01"
+output: html_document
+---
+
+
+Full story here...
