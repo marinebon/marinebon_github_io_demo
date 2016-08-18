@@ -14,9 +14,6 @@
 <title>Welcome</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -171,100 +168,6 @@ $(document).ready(function () {
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
-
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.9em;
-  padding-left: 5px;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -441,14 +344,12 @@ Photo credit: Submerged Resources Center
 </div>
 <div id="sites" class="section level2">
 <h2>Sites</h2>
-<div id="htmlwidget-b780a9c4eb6feca6e182" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b780a9c4eb6feca6e182">{"x":{"calls":[{"method":"addProviderTiles","args":["Esri.OceanBasemap",null,null,{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addMarkers","args":[[69.1974973,24.8756796,36.7898856,34.2419366],[-173.0639156,-81.4658225,-122.0843023,-119.9600393],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<h2>Chukchi Sea\u003c/h2>\n <a href=http://ambon-us.org>More\u003c/a>","<h2>Florida Keys\u003c/h2>\n <a href=http://www.marinebon.org/florida-keys-sanctuary.html>More\u003c/a>","<h2>Monterey Bay\u003c/h2>\n <a href=http://www.marinebon.org/monterey-bay-projects.html>More\u003c/a>","<h2>Santa Barbara Channel\u003c/h2>\n <a href=http://sbc.marinebon.org>More\u003c/a>"],null,null]}],"limits":{"lat":[24.8756796,69.1974973],"lng":[-173.0639156,-81.4658225]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4723c94130e238510eed" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4723c94130e238510eed">{"x":{"calls":[{"method":"addProviderTiles","args":["Esri.OceanBasemap",null,null,{"errorTileUrl":"","noWrap":false,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false}]},{"method":"addMarkers","args":[[69.1974973,24.8756796,36.7898856,34.2419366],[-173.0639156,-81.4658225,-122.0843023,-119.9600393],null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},["<h2>Chukchi Sea\u003c/h2>\n <a href=http://ambon-us.org>More\u003c/a>","<h2>Florida Keys\u003c/h2>\n <a href=http://www.marinebon.org/florida-keys-sanctuary.html>More\u003c/a>","<h2>Monterey Bay\u003c/h2>\n <a href=http://www.marinebon.org/monterey-bay-projects.html>More\u003c/a>","<h2>Santa Barbara Channel\u003c/h2>\n <a href=http://sbc.marinebon.org>More\u003c/a>"],null,null]}],"limits":{"lat":[24.8756796,69.1974973],"lng":[-173.0639156,-81.4658225]}},"evals":[],"jsHooks":[]}</script>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
