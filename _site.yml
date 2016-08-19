@@ -40,7 +40,7 @@ navbar:
 #      text: "About"
       href: about.html
     - icon: fa-question fa-lg
-      href: help.html
+      href: help/
     - icon: fa-phone fa-lg 
       href: contact.html
 output:
