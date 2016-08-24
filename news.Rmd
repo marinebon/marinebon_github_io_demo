@@ -2,7 +2,7 @@
 title: "News"
 params:
   news_limit: 100
-output: html_fragment
+output: html_document
 ---
 
 ```{r, child="_news.Rmd"}
