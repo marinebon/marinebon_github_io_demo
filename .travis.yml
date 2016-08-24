@@ -10,7 +10,7 @@ script:
 - git config --global user.email "bdbest@gmail.com"
 - git add *
 - git commit -a -m "Updating website (${TRAVIS_BUILD_NUMBER}) [ci skip]"
-- git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD:gh-pages
+- git push https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git HEAD
 #after_success:
 notifications:
   email:
