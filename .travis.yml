@@ -4,6 +4,8 @@ cache:
   packages: true
   directories:
   - _cache
+git:
+  depth: 3
 script:
 - Rscript -e 'rmarkdown::render_site()'
 - git config --global user.name "Ben Best (Travis-CI)"
