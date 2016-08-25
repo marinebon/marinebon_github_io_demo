@@ -1,0 +1,38 @@
+---
+title: "Invertebrate Dieoff at Flower Garden Banks"
+summary: "Flower Garden Banks National Marine Sanctuary suffered an unprecedented mass dieoff of numerous species of corals, sea urchins, brittle stars, and sponges over a large area."
+date: "2016-08-24"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+On July X, Dr. Emma Hickerson, Research Coordinator for the Flower Garden Banks National Marine Sanctuary (FGBNMS) and staff were out for a sampling cruise and inspection?? of the East Flower Garden Bank and identified what appears to be an unprecedented mass dieoff of numerous species of corals, sea urchins, brittle stars, and sponges over a large area (define?size.)  Dr. Hickerson contacted NOAA National Sanctuary Chief Scientist Steve Gittings about an urgent request for data to define the conditions and assess potential contributing factors.  
+
+Hickerson reported that the researchers were seeing large mats of tissue sloughing off, and there appeared to be large bacterial mats on the bottom.  Large amounts of material and haze in the water, creating nearly zero visibility conditions in some places.  The water temperature was 86F.  The areas near mooring buoys 4, 5, and 6, which are about 100 m from one another were effected but the issues were not seen at Buoy 2, which is a long-term monitoring study site, on the east edge of the reef, a similar distance away.
+
+Gittings then contacted NOAA scientists and Marine Biodiversity Observation Network PI Frank Muller Karger at University of South Florida to request satellite images of the area. Muller Karger engaged USF IMaRS lab / MBON post-doctoral research associate Digna Rueda Roa to immediately begin reviewing NASA MODIS images for that region of the Gulf of Mexico.  Rueda Roa produced a comparison of the NASA MODIS Chlorophyll-a product "climatology" (June-July 2003-2010) and recent MODIS chl derived individual passes.
+
+Historically for this time of year, the FGBNMS is near the edge of the coastal water plume. The FGBNMS area normally received some brackish water but is not totally immersed in it. This year, from June 22nd - July 24th 2016, the Flower Garden Banks had sustained presence of waters Chl > 0.5 -- an anomalously high Chl level.  This is in part due to the heavy rains occurring in the Texas-Louisiana and Mississippi watershed over the past several months. Additionally, it also indicated that the winds and ocean circulation pushed the fresh water farther offshore than is typical.
+
+PHOTO CAPTION:  be opened in a browser or picture viewer) and cycle between the July climatology and the images to get a sense of the massive plume that engulfed the FGBNMS. The location of the East Flower Garden Bank is marked with a red star. The areas with Chl higher than 0.5 mg/m^3 are masked in white.
+
+The satellite chlorophyll product is a very good tracer of land discharge and coastal waters, specifically the Mississippi River plume and coastal waters as they disperse. It does not show readl chlorophyll as these waters also have colored dissolved organic matter - those signals are confounded in this product.  This indicates that the corals have been experiencing several anomalies for an entire month:
+
+- lower salinity 
+- higher turbidity (lower light)
+- more organic matter deposition
+- likely higher bacterial counts as this organic matter degrades
+
+MODIS image for 13 JUL 2016 that shows the massive plume washing over the FGBNMS. The trace is also shown in one of the masked figures below:
+
+http://imars.usf.edu/modis/husf/pass/1/chlora/gcoos/2016-07-13-163000-2016-07-13-163459
+
+NOAA SUOMI VIIRS image for 16 July 2016:
+http://imars.usf.edu/viirs/husf/pass/750/chlora/gcoos/2016-07-16-184025-2016-07-16-185147
+After July25, there were no usable Chl images for that area, USF researchers will continue to monitor and provide an update when new images are available.
+
+
