@@ -14,14 +14,14 @@
 <title>News</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
@@ -97,7 +97,6 @@ button.code-folding-btn:focus {
   outline: none;
 }
 </style>
-
 
 <style type="text/css">
 /* padding for bootstrap navbar */
@@ -275,14 +274,7 @@ div.tocify {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li>
-  <a href="index.html">
-    <span class="fa fa-home"></span>
-     
-    Home
-  </a>
-</li>
-<li class="dropdown">
+        <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-globe"></span>
      
@@ -370,27 +362,27 @@ div.tocify {
 
 <div id="invertebrate-dieoff-at-flower-garden-banks" class="section level3">
 <h3>Invertebrate Dieoff at Flower Garden Banks</h3>
-<p><em>(2016-08-24)</em> Flower Garden Banks National Marine Sanctuary suffered an unprecedented mass dieoff of numerous species of corals, sea urchins, brittle stars, and sponges over a large area. <a href="news/2016-08-24_flower-garden-banks-issue.Rmd">More</a></p>
+<p><em>(2016-08-24)</em> Flower Garden Banks National Marine Sanctuary suffered an unprecedented mass dieoff of numerous species of corals, sea urchins, brittle stars, and sponges over a large area. <a href="./news_2016-08-24_flower-garden-banks-issue.html">More</a></p>
 </div>
 <div id="demo-of-using-rmarkdown" class="section level3">
 <h3>Demo of using Rmarkdown</h3>
-<p><em>(2016-04-01)</em> a quick way to add news item <a href="news/2016-08-10_testing.Rmd">More</a></p>
+<p><em>(2016-04-01)</em> a quick way to add news item <a href="./news_2016-08-10_testing.html">More</a></p>
 </div>
 <div id="mbon-portal-review-meetings" class="section level3">
 <h3>MBON Portal Review Meetings</h3>
-<p><em>(2016-06-03)</em> IOOS RAs data management committee saw a demo of the MBON portal. MBON teams are scheduling meetings with ecologists, fisheries experts and frequent users of the datasets to discuss the indices, analytical functionality and obtain feedback. <a href="news/2016-06-03_portal-review.Rmd">More</a></p>
+<p><em>(2016-06-03)</em> IOOS RAs data management committee saw a demo of the MBON portal. MBON teams are scheduling meetings with ecologists, fisheries experts and frequent users of the datasets to discuss the indices, analytical functionality and obtain feedback. <a href="./news_2016-06-03_portal-review.html">More</a></p>
 </div>
 <div id="mbon-portal-tests-biodiversity-indices-and-regional-datasets" class="section level3">
 <h3>MBON Portal Tests Biodiversity Indices and Regional Datasets</h3>
-<p><em>(2016-05-01)</em> The MBON DMAC team and Axiom Data Sciences incorporated seven biodiversity indices into the portal. During this beta test period, the team is analyzing the indices in the context of the Florida Reef Visual Census (RVC) datasets, the California Cooperative Oceanic Fisheries Investigations (CalCOFI) program larval fish and egg surveys, and the Bering Arctic Subarctic Integrated Survey (BASIS) data. <a href="news/2016-05-01_portal-tests.Rmd">More</a></p>
+<p><em>(2016-05-01)</em> The MBON DMAC team and Axiom Data Sciences incorporated seven biodiversity indices into the portal. During this beta test period, the team is analyzing the indices in the context of the Florida Reef Visual Census (RVC) datasets, the California Cooperative Oceanic Fisheries Investigations (CalCOFI) program larval fish and egg surveys, and the Bering Arctic Subarctic Integrated Survey (BASIS) data. <a href="./news_2016-05-01_portal-tests.html">More</a></p>
 </div>
 <div id="outreach-in-monterey-and-florida" class="section level3">
 <h3>Outreach in Monterey and Florida</h3>
-<p><em>(2016-04-01)</em> MBON partners in the NOAA Monterey Bay National Marine Sanctuary and Gulf of Mexico Coastal Ocean Observing Systems (GCOOS) engage youth, public and educators. <a href="news/2016-04-01_outreach.Rmd">More</a></p>
+<p><em>(2016-04-01)</em> MBON partners in the NOAA Monterey Bay National Marine Sanctuary and Gulf of Mexico Coastal Ocean Observing Systems (GCOOS) engage youth, public and educators. <a href="./news_2016-04-01_outreach.html">More</a></p>
 </div>
 <div id="new-seascape-guides-in-florida-keys" class="section level3">
 <h3>New Seascape Guides in Florida Keys</h3>
-<p><em>(2016-03-01)</em> MBON researchers tested a new sampling plan strategy based on satellite seascape maps. <a href="news/2016-03-01_seascape-guides.Rmd">More</a></p>
+<p><em>(2016-03-01)</em> MBON researchers tested a new sampling plan strategy based on satellite seascape maps. <a href="./news_2016-03-01_seascape-guides.html">More</a></p>
 </div>
 
 
@@ -406,7 +398,6 @@ div.tocify {
 $(document).ready(function () {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
 });
-
 
 </script>
 

@@ -2,7 +2,10 @@
 title: "News"
 params:
   news_limit: 100
-output: html_document
+output:
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r, child="_news.Rmd"}

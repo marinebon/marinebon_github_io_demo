@@ -2,9 +2,9 @@ name: "Marine Biodiversity Observation Network"
 navbar:
   title: "MBON"
   left:
-    - text: "Home"
-      icon: fa-home
-      href: index.html
+#    - text: "Home"
+#      icon: fa-home
+#      href: index.html
 #    - text: "More"
 #      icon: fa-cog
 #      href: more.html
@@ -47,7 +47,7 @@ output:
   html_document:
     theme: cosmo
     highlight: textmate
-    toc: true
+    toc: false
     toc_float: true
 #    include:
 #      after_body: footer.html

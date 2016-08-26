@@ -2,14 +2,15 @@
 ```{r, results='asis', echo=FALSE}
 news_limit = params$news_limit
 
-files = rev(list.files('news', full.names = T))
+files = rev(list.files('.', 'news_.*'))
 news_gt_limit = length(files) > news_limit
 
 if (news_gt_limit) files = files[1:news_limit]
-for (f in files){ 
-  lns = rmarkdown:::read_lines_utf8(f, getOption("encoding"))
+for (rmd in files){ 
+  lns = rmarkdown:::read_lines_utf8(rmd, getOption("encoding"))
   y = rmarkdown:::parse_yaml_front_matter(lns)
-  cat(sprintf('### %s\n_(%s)_ %s [More](%s)\n\n', y$title, y$date, y$summary, f))
+  html = sprintf('%s.html', tools::file_path_sans_ext(rmd))
+  cat(sprintf('### %s\n_(%s)_ %s [More](./%s)\n\n', y$title, y$date, y$summary, html))
 }
 if (news_gt_limit) cat('See [All News](news.html)')
 ```
