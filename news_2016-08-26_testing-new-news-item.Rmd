@@ -1,0 +1,8 @@
+---
+title: "We got News!"
+summary: "Here's a little summary"
+date: "2016-08-26"
+output: html_document
+---
+
+We're just adding a new news item.

@@ -27,9 +27,9 @@ The satellite chlorophyll product is a very good tracer of land discharge and co
 - more organic matter deposition
 - likely higher bacterial counts as this organic matter degrades
 
-MODIS image for 13 JUL 2016 that shows the massive plume washing over the FGBNMS. The trace is also shown in one of the masked figures below:
+MODIS image for 13 JUL 2016 that shows the massive plume washing over the FGBNMS. The trace is also shown in one of the masked figures below from [IMARS satellite image](http://imars.usf.edu/modis/husf/pass/1/chlora/gcoos/2016-07-13-163000-2016-07-13-163459):
 
-http://imars.usf.edu/modis/husf/pass/1/chlora/gcoos/2016-07-13-163000-2016-07-13-163459
+![](http://imars.usf.edu/sites/default/files/styles/large/public/imars_data/modis/imars/intermediate/pass/1km/oc/gcoos/2016.07/AQUA.20160713.1630.gcoos.chlor_a.png?itok=iHulMMRw)
 
 NOAA SUOMI VIIRS image for 16 July 2016:
 http://imars.usf.edu/viirs/husf/pass/750/chlora/gcoos/2016-07-16-184025-2016-07-16-185147
