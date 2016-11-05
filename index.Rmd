@@ -27,8 +27,22 @@ sites = read_csv('data/sites.csv') %>%
   mutate(
     popup_html = sprintf("<h2>%s</h2>\n <a href=%s>More</a>", site,  url))
 
+sites_nms = sites %>% filter(!site %in% c('Chukchi Sea','Santa Barbara Channel'))
+
+leaflet(data = sites_nms) %>%
+  addProviderTiles('Stamen.TonerBackground') %>% # 'Esri.OceanBasemap'
+  addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) %>%
+  addLabelOnlyMarkers(
+    ~lon, ~lat, label=~as.character(site),
+    labelOptions = labelOptions(
+      noHide = T, direction = 'auto', textsize = "20px"))
+
 leaflet(data = sites) %>%
-  addProviderTiles('Esri.OceanBasemap') %>%
-  addMarkers(~lon, ~lat, popup = ~as.character(popup_html))
+  addProviderTiles('Stamen.TonerBackground') %>% # 'Esri.OceanBasemap'
+  addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) %>%
+  addLabelOnlyMarkers(
+    ~lon, ~lat, label=~as.character(site),
+    labelOptions = labelOptions(
+      noHide = T, direction = 'auto', textsize = "20px"))
 ```
 
