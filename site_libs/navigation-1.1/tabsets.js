@@ -127,12 +127,6 @@ window.buildTabsets = function(tocID) {
     active.addClass('active');
     if (fade)
       active.addClass('in');
-<<<<<<< HEAD
-=======
-
-    if (tabset.hasClass("tabset-sticky"))
-      tabset.rmarkdownStickyTabs();
->>>>>>> 1b25da52295afbd7a3065565488a4ef039417394
   }
 
   // convert section divs with the .tabset class to tabsets
