@@ -26,23 +26,19 @@ library(leaflet)
 sites = read_csv('data/sites.csv') %>%
   mutate(
     popup_html = sprintf("<h2>%s</h2>\n <a href=%s>More</a>", site,  url))
+label_directions = sprintf("'%s'", paste(sites$label_direction, collapse="','"))
 
-sites_nms = sites %>% filter(!site %in% c('Chukchi Sea','Santa Barbara Channel'))
-
-leaflet(data = sites_nms) %>%
+# sites_nms = sites %>% filter(!site %in% c('Chukchi Sea','Santa Barbara Channel'))
+# leaflet(data = sites_nms) %>%
+leaflet(data = sites, height=300) %>%
   addProviderTiles('Stamen.TonerBackground') %>% # 'Esri.OceanBasemap'
-  addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) %>%
-  addLabelOnlyMarkers(
-    ~lon, ~lat, label=~as.character(site),
-    labelOptions = labelOptions(
-      noHide = T, direction = 'auto', textsize = "20px"))
-
-leaflet(data = sites) %>%
-  addProviderTiles('Stamen.TonerBackground') %>% # 'Esri.OceanBasemap'
-  addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) %>%
-  addLabelOnlyMarkers(
-    ~lon, ~lat, label=~as.character(site),
-    labelOptions = labelOptions(
-      noHide = T, direction = 'auto', textsize = "20px"))
+  addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) # %>%
+  # addLabelOnlyMarkers(
+  #   ~lon, ~lat, label=~as.character(site),
+  #   labelOptions = labelOptions(
+  #     #noHide = T, direction = 'auto', textsize = "20px"))
+  #     noHide = T, direction = sites$label_direction, textsize = "20px")) # "direction":["right","left","right","left","right"]
+      #noHide = T, direction = label_directions, textsize = "20px")) # ,"direction":"'right','left','right','left','right'",
+      
 ```
 
