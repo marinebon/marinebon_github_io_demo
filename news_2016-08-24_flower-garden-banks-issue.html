@@ -20,13 +20,12 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-1.1/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-1.1/highlight.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet"
-      href="site_libs/highlight/textmate.css"
-      type="text/css" />
-<script src="site_libs/highlight/highlight.js"></script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -153,7 +152,6 @@ $(document).ready(function () {
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
-<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
@@ -280,7 +278,7 @@ $(document).ready(function () {
 </ul>
 <p>MODIS image for 13 JUL 2016 that shows the massive plume washing over the FGBNMS. The trace is also shown in one of the masked figures below from <a href="http://imars.usf.edu/modis/husf/pass/1/chlora/gcoos/2016-07-13-163000-2016-07-13-163459">IMARS satellite image</a>:</p>
 <div class="figure">
-<img src="http://imars.usf.edu/sites/default/files/styles/large/public/imars_data/modis/imars/intermediate/pass/1km/oc/gcoos/2016.07/AQUA.20160713.1630.gcoos.chlor_a.png?itok=iHulMMRw" alt="" />
+<img src="http://imars.usf.edu/sites/default/files/styles/large/public/imars_data/modis/imars/intermediate/pass/1km/oc/gcoos/2016.07/AQUA.20160713.1630.gcoos.chlor_a.png?itok=iHulMMRw" />
 
 </div>
 <p>NOAA SUOMI VIIRS image for 16 July 2016: <a href="http://imars.usf.edu/viirs/husf/pass/750/chlora/gcoos/2016-07-16-184025-2016-07-16-185147" class="uri">http://imars.usf.edu/viirs/husf/pass/750/chlora/gcoos/2016-07-16-184025-2016-07-16-185147</a> After July25, there were no usable Chl images for that area, USF researchers will continue to monitor and provide an update when new images are available.</p>
@@ -293,8 +291,11 @@ $(document).ready(function () {
 <script>
 
 // add bootstrap table styles to pandoc tables
-$(document).ready(function () {
+function bootstrapStylePandocTables() {
   $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
 });
 
 
