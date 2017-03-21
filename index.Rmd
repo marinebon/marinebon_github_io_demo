@@ -30,7 +30,7 @@ label_directions = sprintf("'%s'", paste(sites$label_direction, collapse="','"))
 
 # sites_nms = sites %>% filter(!site %in% c('Chukchi Sea','Santa Barbara Channel'))
 # leaflet(data = sites_nms) %>%
-leaflet(data = sites, height=300) %>%
+leaflet(data = sites, height=300, width="100%") %>%
   addProviderTiles('Stamen.TonerBackground') %>% # 'Esri.OceanBasemap'
   addMarkers(~lon, ~lat, popup = ~as.character(popup_html)) # %>%
   # addLabelOnlyMarkers(
