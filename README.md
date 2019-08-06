@@ -1,5 +1,12 @@
 # marinebon.github.io
 
-[![Build Status](https://travis-ci.org/marinebon/marinebon.github.io.svg?branch=master)](https://travis-ci.org/marinebon/marinebon.github.io)
+This website was originally setup as a demonstration for using Rmarkdown and Github. You can access the original content here:
 
-Prototype MarineBON website using Rmarkdown and Github
+- website: [marinebon.github.io/demo](https://marinebon.github.io)
+- code: [github.com/marinebon/marinebon.github.io](https://github.com/marinebon/marinebon.github.io)
+
+For active sites that are part of the Marine Biodiversity Observation Network (**MBON**) please see:
+
+- **project website**: [marinebon.org](https://marinebon.org)
+- **data portal**: [mbon.ioos.us](https://mbon.ioos.us)
+
